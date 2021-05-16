@@ -1,4 +1,3 @@
-"usestrict";
 let formSec = document.getElementById("form");
 let tableSec = document.getElementById("table");
 
