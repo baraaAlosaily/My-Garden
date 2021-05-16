@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>My-Garden</title>
+  </head>
+  <body>
+    <h2 style="padding: 20px; background-color: lightblue; text-align: center">
+      My Fabulous Garden
+    </h2>
+    <div id="all">
+      <section id="formsec">
+        <fieldset>
+          <legend>New Flower</legend>
+          <form id="form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="img">Image</label>
+              <select name="img" id="img">
+                <option value="Alstroemerias">Alstroemerias</option>
+                <option value="Gardenias">Gardenias</option>
+                <option value="Orchids">Orchids</option>
+                <option value="Roses">Roses</option>
+                <option value="Roses">Sunflowers</option>
+                <option value="Tulips">Tulips</option>
+                <option value="Tulips">Tulips</option>
+              </select>
+            </div>
+            <div>
+              <label for="sea">Season</label>
+              <input id="sea" type="text" required />
+            </div>
+            <input type="submit" id="submit" value="Submit" />
+          </form>
+          <button onclick="clearAll()">Clear LS</button>
+        </fieldset>
+      </section>
+      <section id="tableSec">
+        <table id="table"></table>
+      </section>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
